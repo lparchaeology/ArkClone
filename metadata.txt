@@ -1,0 +1,39 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=ARK Clone
+qgisMinimumVersion=2.0
+description=This plugins adds a legend context menu option to clone vector layers as memory layers
+version=0.1
+author=John Layt / L - P : Archaeology
+email=j.layt@kde.org
+
+about=ARK Clone is a QGIS Plugin to clone existing vector layers as temporary memory layers.<br/><br/>This plugin adds an option to the legend context menu to clone the current layer. Users can choose to clone just the layer structure, just the selected features, or all the features.<br/><br/>ARK Clone was developed as part of ARK, the Archaeological Recording Kit, by L - P : Archaeology (http://ark.lparchaeology.com).
+
+tracker=https://github.com/lparchaeology/ArkClone
+repository=https://github.com/lparchaeology/ArkClone
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=layers, legend, vector
+
+homepage=https://github.com/lparchaeology/ArkClone
+category=Vector
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
