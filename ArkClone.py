@@ -25,8 +25,6 @@
  ***************************************************************************/
 """
 
-import os.path
-
 from PyQt4.QtGui import QAction, QMenu, QInputDialog
 
 from qgis.core import QgsMapLayer
@@ -40,9 +38,15 @@ import resources
 class ArkClone(Plugin):
     """QGIS Plugin Implementation."""
 
-    def __init__(self, iface):
-        super(ArkClone, self).__init__(iface, u'ArkClone', ':/plugins/ArkClone/icon.png', os.path.dirname(__file__),
-                                         Plugin.VectorGroup, Plugin.NoGroup, checkable=True)
+    def __init__(self, iface, path):
+        super(ArkClone, self).__init__(iface,
+                                       pluginName = u'ArkClone',
+                                       pluginIconPath = ':/images/themes/default/mActionCreateMemory.svg',
+                                       pluginPath = path,
+                                       menuGroup = Plugin.VectorGroup,
+                                       toolbarGroup = Plugin.NoGroup,
+                                       checkable = True,
+                                       parent = iface.mainWindow())
         # Set display / menu name now we have tr() set up
         self.setDisplayName(self.tr(u'&Clone As Memory Layer'))
 
@@ -77,6 +81,8 @@ class ArkClone(Plugin):
 
     def _clone(self, copyData, copySelected):
         layer = self.iface.mapCanvas().currentLayer()
+        if not layers.isValid(layer):
+            return
         name, ok = QInputDialog.getText(self.iface.mainWindow(), self.tr('Enter layer name'), self.tr('Enter memory layer name'), text=layer.name() + '_mem')
         if not ok or not name:
             return

@@ -26,6 +26,7 @@
  This script initializes the plugin, making it known to QGIS.
 """
 
+import os.path
 
 # noinspection PyPep8Naming
 def classFactory(iface):  # pylint: disable=invalid-name
@@ -36,4 +37,4 @@ def classFactory(iface):  # pylint: disable=invalid-name
     """
     #
     from .ArkClone import ArkClone
-    return ArkClone(iface)
+    return ArkClone(iface, os.path.dirname(__file__))

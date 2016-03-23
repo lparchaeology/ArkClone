@@ -7,14 +7,14 @@
 # This file should be included when you package your plugin.# Mandatory items:
 
 [general]
-name=ARK Clone
+name=Clone as Memory Layer
 qgisMinimumVersion=2.0
-description=This plugins adds a legend context menu option to clone vector layers as memory layers
+description=Clone the current vector layer as a memory layer.
 version=0.1
 author=John Layt / L - P : Archaeology
 email=j.layt@kde.org
 
-about=ARK Clone is a QGIS Plugin to clone existing vector layers as temporary memory layers.<br/><br/>This plugin adds an option to the legend context menu to clone the current layer. Users can choose to clone just the layer structure, just the selected features, or all the features.<br/><br/>ARK Clone was developed as part of ARK, the Archaeological Recording Kit, by L - P : Archaeology (http://ark.lparchaeology.com).
+about=<i>ARK Clone</i> is a QGIS Plugin to clone existing vector layers as temporary memory layers. <br/><br/>This plugin adds an option to the legend context menu to clone the current layer definition, including the style and attribute fields. Users can choose to clone just the layer structure, the currently selected features, or all the features. <br/><br/><i>ARK Clone</i> was developed as part of ARK, the <a href='http://ark.lparchaeology.com'>Archaeological Recording Kit</a>, by <a href='http://www.lparchaeology.com'>L - P : Archaeology</a>.
 
 tracker=https://github.com/lparchaeology/ArkClone
 repository=https://github.com/lparchaeology/ArkClone
