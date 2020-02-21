@@ -1,20 +1,20 @@
-# This file contains metadata for your plugin. Since 
-# version 2.0 of QGIS this is the proper way to supply 
-# information about a plugin. The old method of 
-# embedding metadata in __init__.py will 
+# This file contains metadata for your plugin. Since
+# version 2.0 of QGIS this is the proper way to supply
+# information about a plugin. The old method of
+# embedding metadata in __init__.py will
 # is no longer supported since version 2.0.
 
 # This file should be included when you package your plugin.# Mandatory items:
 
 [general]
-name=Clone as Memory Layer
+name=ARK Clone
 qgisMinimumVersion=2.0
-description=Clone the current vector layer as a memory layer.
-version=0.1
-author=John Layt / L - P : Archaeology
-email=j.layt@kde.org
+description=Clone the current vector layer as a shapefile or memory layer.
+version=1.0.0
+author=John Layt / L ~ P : Archaeology
+email=ark@lparchaeology.com
 
-about=<i>ARK Clone</i> is a QGIS Plugin to clone existing vector layers as temporary memory layers. <br/><br/>This plugin adds an option to the legend context menu to clone the current layer definition, including the style and attribute fields. Users can choose to clone just the layer structure, the currently selected features, or all the features. <br/><br/><i>ARK Clone</i> was developed as part of ARK, the <a href='http://ark.lparchaeology.com'>Archaeological Recording Kit</a>, by <a href='http://www.lparchaeology.com'>L - P : Archaeology</a>.
+about=<i>ARK Clone</i> is a QGIS Plugin to clone existing vector layers as shapefiles or memory layers. <br/><br/>This plugin adds an option to the legend context menu to clone the current layer definition, including the style and attribute fields. Users can choose to clone just the layer structure, the currently selected features, or all the features. <br/><br/><i>ARK Clone</i> was developed as part of ARK, the <a href='http://ark.lparchaeology.com'>Archaeological Recording Kit</a>, by <a href='http://www.lparchaeology.com'>L ~ P : Archaeology</a>.
 
 tracker=https://github.com/lparchaeology/ArkClone
 repository=https://github.com/lparchaeology/ArkClone
@@ -36,4 +36,3 @@ experimental=False
 
 # deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
-

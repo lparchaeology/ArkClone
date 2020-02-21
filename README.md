@@ -1,6 +1,6 @@
 # ARK Clone
 
-A QGIS Plugin to clone existing vector layers as temporary memory layers.
+A QGIS Plugin to clone existing vector layers as shapefiles or temporary memory layers.
 
 This plugin adds an option to the legend context menu to clone the current layer. Users can choose to clone just the layer structure, just the selected features, or all the features.
 
